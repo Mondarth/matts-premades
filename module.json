@@ -1,0 +1,45 @@
+{
+  "id": "matts-premades",
+  "title": "Matt's Premades",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "item-piles",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "gambits-premades",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "Matt's Premades",
+  "authors": [
+    {
+      "name": "Matt",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/ulenarofmondarth/matts-premades",
+  "packs": [
+    {
+      "name": "matts-premades",
+      "label": "Matt's Premades",
+      "path": "packs/matts-premades",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ]
+}
