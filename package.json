@@ -1,0 +1,29 @@
+{
+  "name": "matts-premades",
+  "version": "1.1.1",
+  "description": "Foundry VTT Matt's Premades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 0",
+    "prepare": "husky install",
+    "build:docs": "docker run --rm --user \"$(id -u):$(id -g)\" -v \"$(pwd)/docs\":/docs sphinxdoc/sphinx make html",
+    "serve:docs": "docker run --rm --name docserver -d -p 8080:80 -v \"$(pwd)/docs/_build/html\":/usr/share/nginx/html:ro nginx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mondarth/matts-premades.git"
+  },
+  "author": "Ulenar of Mondarth",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Mondarth/matts-premades/issues"
+  },
+  "homepage": "https://github.com/Mondarth/matts-premades#readme",
+  "devDependencies": {
+    "@commitlint/cli": "19.4.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^8.0.0"
+  }
+}
